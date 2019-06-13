@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script type="text/javascript">
+            function calc()
+            {
+                var nb1 = document.getElementById("txtnb1").value;
+                var nb2 = document.getElementById("txtnb2").value;
+                var nb3 = document.getElementById("txtnb3").value;
+                var total = parseInt(nb1) + parseInt(nb2) +parseInt(nb3);
+                document.getElementById("txt1").innerText = total;
+            }
+
+        </script>
+    </head>
+    <body>
+        nombre1:<input type="text" id="txtnb1" />
+        <br/>
+        nombre2:<input type="text" id="txtnb2" />
+        <br/>
+        nombre3:<input type="text" id="txtnb3" />
+        <br/>
+
+        <button onclick="calc();">Calculer</button>
+        <br/>
+        <p id="txt1" ></p>
+    </body>
+
+</html>
