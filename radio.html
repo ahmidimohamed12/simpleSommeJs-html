@@ -1,0 +1,28 @@
+ <!doctype html>
+<html>
+ <head>
+    <script>
+        function gender()
+        {
+            var nom = document.getElementById("nom").value;
+            var sexe;
+            if(document.getElementById("hm").checked)
+            {
+                sexe =document.getElementById("hm").value;
+            }else{
+                sexe =document.getElementById("fm").value;
+            }
+            document.getElementById("root").innerText = sexe +"/"+nom;
+        }
+
+    </script>
+ </head>
+ <body>
+    nom<input type="text" id="nom"/>
+    Sexe<input type="radio" id="hm" value="Homme" groupname="s"/>Homme
+    <input type="radio" id="fm" value="Femme" groupname="s"/>Femme
+    <button onclick="gender();" >Save</button>
+    <br/>
+    <p id="root"></p>
+ </body>
+</html>
